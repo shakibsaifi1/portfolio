@@ -1,0 +1,134 @@
+.header{
+    background: #fff;
+}
+
+.portfolio{
+    background-color: rgb(254, 197, 72, 0.1);
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.portfolio-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.portfolio-card:last-of-type{
+    margin-bottom: 0px;
+}
+
+.card-banner{
+    flex: 0;
+}
+
+.card-banner img{
+    border: 2px solid #383838;
+    transition: all 0.25s ease;
+    width: 100%;
+}
+
+.card-banner img:hover{
+    box-shadow: 3px 3px 0 0 #383838;
+}
+
+.card-content{
+    padding-top: 25px;
+}
+
+.section-title{
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.card-content .chip{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 2.2;
+    color: #383838;
+    background-color: rgb(255, 98, 26, 0.2);
+    text-transform: uppercase;
+    border-radius: 100px;
+    letter-spacing: 3px;
+    padding: 6px 20px;
+    margin: 0 0 18px;
+    display: inline-block;
+}
+
+.card-content .title-md{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #383838;
+}
+
+.card-content .card-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #545454;
+    margin: 20px 0 25px;
+}
+
+.card-content .btn-primary{
+    display: inline-block;
+}
+
+.card-banner-2{
+    order: 0;
+}
+
+.card-content-2{
+    padding-left: 0px;
+    padding-right: 25px;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px){
+
+    .portfolio{
+        padding-top: 160px;
+    }
+
+    .portfolio-card{
+        flex-direction: row;
+    }
+
+    .card-content{
+        flex-basis: 650px;
+        padding-left: 25px;
+        padding-top: 0px;
+    }
+
+    .card-content-2{
+        padding-left: 0px;
+    }
+
+    .section-title{
+        font-size: 50px;
+        margin-bottom: 60px;
+    }
+
+    .card-banner img{
+        width: unset;
+    }
+
+    .card-banner-2{
+        order: 1;
+    }
+}
